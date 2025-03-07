@@ -1,0 +1,153 @@
+/*Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+}
+/*Body*/
+body {
+  background-color: #32373e;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px;  */
+}
+/* form */
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.signup{
+  max-width: 330px;
+  width: 100%;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  padding: 0 10px;
+  border-color: #32373e;
+  font-size: 14px;
+}
+input.error {
+  border-color: #d73a49;
+}
+
+/* signup  Buttons */
+button {
+  width: 100%;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #04aa6d;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+button:hover {
+  background: #34ad75;
+}
+
+/* Error Message */
+.error-message {
+  display: none;
+  color: #d73a49;
+  background-color: #fdd;
+  border: 1px solid #f9c;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Sign Up Text */
+.signup-text {
+  font-size: 14px;
+  color: #586069;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signup-link {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+/*Passowrd Validation*/
+/* .validation-icon {
+  display: none;
+}
+.validation-point {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+} */
+.validation-container {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  color: #555;
+  display: none;
+}
+
+.validation-point {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.validation-point i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.valid {
+  color: #63e6be; /* Green color for valid icon */
+  
+}
+
+.invalid {
+  color: #ff6b6b; /* Red color for invalid icon */
+  
+}
+i[ms-code-pw-validation-icon="true"]{
+    display: none;
+}
+i[ms-code-pw-validation-icon="false"]{
+    display: flex;
+}

@@ -1,0 +1,157 @@
+h1 {
+  text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c0c8ca; /*#7e7f85*/
+  position: relative;
+}
+
+/* Product Model*/
+/*  Set the modal width */
+.modal-right .modal-dialog {
+  max-width: 400px;
+}
+
+/* #invoice {
+  display: none;
+}
+.dashed-line {
+  border-top: 1px dashed black;
+  margin: 20px 0;
+}
+
+.textStyle {
+  font-family: "Courier New", monospace;
+} */
+.casherMemName {
+  left: 2px;
+}
+.dateTime {
+  position: absolute;
+  right: 2px;
+  top: 70px;
+}
+.receipt-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: #f9f9f9;
+  font-family: "Courier New", Courier, monospace;
+  display: none;
+}
+
+.dashed-line {
+  border: none;
+  border-top: 1px dashed gray;
+  margin: 10px 0;
+}
+
+.textStyle {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.store-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.table-borderless th,
+.table-borderless td {
+  padding: 5px;
+}
+.printBtn {
+  background-color: #27ae60;
+  color: white;
+}
+.printBtn:hover {
+  background-color: #148b46;
+}
+
+.clearBtn {
+  background-color: #e74c3c; /* Red for Clear */
+  color: white;
+}
+.clearBtn:hover {
+  background-color: #c0392b;
+}
+
+tfoot td {
+  border-top: 1px solid gray;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fw-bolder {
+  font-weight: bolder;
+}
+
+.fs-4 {
+  font-size: 1.5rem;
+}
+
+.logOutbtn {
+  position: absolute;
+  /* right: 5px;
+  bottom: 20px; */
+  top: 20px;
+  right: 15px;
+}
+input[type="text"] {
+  padding: 0 10px;
+  border-color: #32373e;
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #invoice {
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #main-content {
+    display: none;
+  }
+
+  .container,
+  .container-fluid {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .table td,
+  .table th {
+    padding: 4px;
+  }
+
+  .dashed-line {
+    margin: 5px 0;
+  }
+
+  .text-center {
+    margin: 0;
+    padding: 0;
+  }
+}
